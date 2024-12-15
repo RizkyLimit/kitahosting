@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KitaHosting</title>
+  <!-- Link ke CSS yang telah dibangun -->
+  <link href="./dist/styles.css" rel="stylesheet">
+  <!-- Font Awesome untuk ikon (opsional) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="antialiased bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">
+        <a href="#">Kita<span class="text-gray-800">Hosting</span></a>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          <li><a href="#" class="text-gray-700 hover:text-blue-600">Beranda</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-600">Layanan</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-600">Harga</a></li>
+          <li><a href="#" class="text-gray-700 hover:text-blue-600">Kontak</a></li>
+          <li><a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Login</a></li>
+        </ul>
+      </nav>
+      <!-- Menu Mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Dropdown Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow">
+      <ul class="flex flex-col space-y-2 px-4 py-2">
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Beranda</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Layanan</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Harga</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-blue-600">Kontak</a></li>
+        <li><a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white">
+    <div class="container mx-auto px-4 py-20 flex flex-col-reverse md:flex-row items-center">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Hosting Cepat dan Andal</h1>
+        <p class="text-lg mb-6">Dapatkan layanan hosting terbaik dengan kecepatan tinggi dan uptime 99.9%.</p>
+        <a href="#" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Mulai Sekarang</a>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="./src/background.jpg" alt="Ilustrasi Hosting" class="w-full rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Fitur Layanan -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-12">Fitur Kami</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Fitur 1 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-blue-600 mb-4">
+          <i class="fas fa-server fa-2x"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Server Cepat</h3>
+        <p class="text-gray-600">Menggunakan teknologi terbaru untuk memastikan kecepatan akses yang optimal.</p>
+      </div>
+      <!-- Fitur 2 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-blue-600 mb-4">
+          <i class="fas fa-shield-alt fa-2x"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Keamanan Tinggi</h3>
+        <p class="text-gray-600">Perlindungan DDoS dan SSL gratis untuk menjaga keamanan data Anda.</p>
+      </div>
+      <!-- Fitur 3 -->
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <div class="text-blue-600 mb-4">
+          <i class="fas fa-headset fa-2x"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-2">Dukungan 24/7</h3>
+        <p class="text-gray-600">Tim support kami siap membantu Anda kapan saja melalui live chat atau telepon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harga -->
+  <section class="bg-gray-100">
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">Paket Harga</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Paket Basic -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+          <p class="text-4xl font-bold mb-4">Rp10.000/bulan</p>
+          <ul class="mb-6">
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>1 Website
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>10 GB SSD
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>24/7 Support
+            </li>
+          </ul>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full w-full text-center block hover:bg-blue-700">Pilih Paket</a>
+        </div>
+        <!-- Paket Pro -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4">Pro</h3>
+          <p class="text-4xl font-bold mb-4">Rp25.000/bulan</p>
+          <ul class="mb-6">
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>10 Website
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>100 GB SSD
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>Prioritas Support
+            </li>
+          </ul>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full w-full text-center block hover:bg-blue-700">Pilih Paket</a>
+        </div>
+        <!-- Paket Enterprise -->
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold mb-4">Enterprise</h3>
+          <p class="text-4xl font-bold mb-4">Rp50.000/bulan</p>
+          <ul class="mb-6">
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>Unlimited Website
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>Unlimited SSD
+            </li>
+            <li class="flex items-center mb-2">
+              <i class="fas fa-check text-green-500 mr-2"></i>Dedicated Support
+            </li>
+          </ul>
+          <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-full w-full text-center block hover:bg-blue-700">Pilih Paket</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-col lg:flex-row justify-between">
+        <!-- Logo dan Deskripsi -->
+        <div class="mb-6 lg:mb-0">
+          <h2 class="text-2xl font-bold text-white">Kita<span class="text-blue-600">Hosting</span></h2>
+          <p class="mt-2 text-gray-400">Layanan hosting terpercaya dengan performa terbaik dan dukungan pelanggan 24/7.</p>
+        </div>
+        <!-- Link Navigasi -->
+        <div class="mb-6 lg:mb-0">
+          <h3 class="text-xl font-semibold mb-4">Navigasi</h3>
+          <ul>
+            <li class="mb-2"><a href="#" class="hover:text-white">Beranda</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Layanan</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Harga</a></li>
+            <li class="mb-2"><a href="#" class="hover:text-white">Kontak</a></li>
+          </ul>
+        </div>
+        <!-- Media Sosial -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="hover:text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-500">
+        &copy; 2024 KitaHosting. Semua hak cipta dilindungi.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script untuk Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
